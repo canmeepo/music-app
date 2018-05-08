@@ -34,8 +34,8 @@ class Artist extends Component {
             const apiKey = "4344f2026336156c2a06ee306965fdcf";
             const artistName = this.props.match.params.name;
 
-            const resArtistInfo = await fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=${apiKey}&format=json`);
-            const resArtistTracks = await fetch(`http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${artistName}&limit=15&&api_key=${apiKey}&format=json`);
+            const resArtistInfo = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=${artistName}&api_key=${apiKey}&format=json`);
+            const resArtistTracks = await fetch(`https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=${artistName}&limit=15&&api_key=${apiKey}&format=json`);
 
             const artistInfo = await resArtistInfo.json();
             const artistTracks = await resArtistTracks.json();

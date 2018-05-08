@@ -16,7 +16,7 @@ class Artists extends Component {
         try {
             const apiKey = "4344f2026336156c2a06ee306965fdcf";
 
-            const res = await fetch(`http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&limit=10&&api_key=${apiKey}&format=json`);
+            const res = await fetch(`https://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&limit=10&&api_key=${apiKey}&format=json`);
             const artists = await res.json();
             this.setState({
                 artists: artists.artists.artist,
