@@ -1,0 +1,143 @@
+.Artist-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+.Artist-info {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+}
+.Artist-tracks {
+    width: 41%;
+}
+.Artist-bio {
+    font-size: 14px;
+    color:#000;
+}
+.Artist-wrap {
+    width: 48%;
+}
+.Artist-name {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+.Artist-play {
+    width: 64px;
+    height: 64px;
+    background: #e50303;
+    transition: 0.5s;
+    position: relative;
+    margin-top: 40px;
+}
+.Artist-play:before {
+    content: "";
+    position: absolute;
+    left: 28px;
+    top: 25px;
+    border: 8px solid transparent;
+    border-left: 12px solid #fff;
+}
+.Artist-share {
+    width: 91px;
+    height: 50px;
+    font-size: 16px;
+    color: #999;
+    position: relative;
+    border: solid 1px rgba(153, 153, 153, 0.3);
+    display: inline-block;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 20px;
+    line-height: 50px;
+    margin-right: 20px;
+}
+.Artist-share img{ 
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    top: 18px;
+    left: 22px;
+}
+.Artist-like {
+    width: 50px;
+    height: 50px;
+    border: solid 1px rgba(153, 153, 153, 0.3);
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.Artist-like img{
+    width: 15px;
+    height: 16px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+.Artist-like:hover {
+    border: solid 1px #e50303;
+    transition: 0.5s;
+}
+.Artist-share:hover {
+    border: solid 1px #e50303;
+    transition: 0.5s;
+}
+.Artist-buttons {
+    display: flex;
+    padding-top: 30%;
+}
+.Artist-tracks h2 {
+    font-size: 13px;
+    padding-bottom: 20px;
+}
+.Artist-track {
+    padding: 20px 0;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    border-bottom: solid 1px rgba(153, 153, 153, 0.4);
+    height: 22px;
+    line-height: 22px;
+    cursor: pointer;
+}
+.Artist-trackIndex {
+    padding-right: 10px;
+    width: 22px;
+    display: inline-block;
+}
+.Artist-trackName {
+    display: inline-block;
+    width: 85%;
+
+}
+.Artist-trackArtist {
+    color: #999999;
+    display: inline-block;
+    text-align: right;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+li:hover .play {
+    display: block;
+}
+li .play, li:hover .Artist-songNumber {
+    display: none;
+}
+.play, .pause {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    width: 22px;
+    display: inline-block;
+}
+.Artist-songNumber i {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    width: 22px;
+    display: inline-block;
+}
